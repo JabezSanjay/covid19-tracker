@@ -2,13 +2,13 @@ const axios = require("axios");
 
 const url = "https://covid19.mathdro.id/api";
 
-const fetchData = async () => {
+export const fetchData = async () => {
   try {
-    const response = await axios.get(url);
-    return response;
+    const {
+      data: { confirmed, recovered, deaths, lastUpdate },
+    } = await axios.get(url);
+    return { confirmed, recovered, deaths, lastUpdate };
   } catch (error) {
     console.log(error);
   }
 };
-
-export default fetchData;
