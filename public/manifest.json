@@ -1,7 +1,19 @@
 {
   "short_name": "React App",
   "name": "Corona Tracker App using React.js",
-  
+  "icons": [
+    
+    {
+      "src": "corona.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "corona.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
