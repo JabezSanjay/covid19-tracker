@@ -1,6 +1,3 @@
-/* eslint-disable no-use-before-define */
-/* eslint-disable no-unused-vars */
-/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import { Cards, CountryPicker, Chart } from "./components";
 import styles from "./app.module.css";
